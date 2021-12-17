@@ -53,6 +53,7 @@ body {
 	z-index: 100;
 }
 
+
 .ic:hover {
 	color: #660033;
 
@@ -129,4 +130,36 @@ body {
        height:76px;
 	   opacity:1;
 	}
+}
+.email-boxnews{
+  height: 40px;
+  justify-content: center;
+  display: flex; /*its better to use inline-flex*/
+}
+.email-boxnews i{
+  background: #2f3542;
+  width: 40px;
+  line-height: 40px;
+  background-size: cover;
+  padding-left:10px;
+  border-radius: 4px;
+}
+.tboxnews,.btnnews{
+  border: none;
+  outline: none;
+}
+.tboxnews{
+  width: 0px;
+  transition: 0.6s;
+}
+.email-boxnews:hover > .tboxnews,.tboxnews:focus{
+  width: 260px;
+  padding: 0 10px;
+}
+.btnnews{
+  background: #2f3542;
+  color: white;
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
